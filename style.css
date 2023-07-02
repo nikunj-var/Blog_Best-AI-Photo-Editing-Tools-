@@ -23,17 +23,10 @@ html{
 section{
     padding:2rem 9% 1rem;
 }
-.logo{
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-}
-.navbar{
-    padding: 1.5rem 2%;
-    font-family: var(--heading-family);
-}
-.navbar .nav-item a{
-    font-size: 2rem;
+.navbar .logo-box a{
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: cursive;
 }
 
 .home{
@@ -41,7 +34,9 @@ section{
 }
 .home .row .home-page-heading{
     font-family: serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    max-width: 72%;
+    margin: auto;
    color:rgb(100, 63, 117);
     font-weight: 800;
     text-align: center;
@@ -55,11 +50,41 @@ section{
 
 .home .row .home-page-img img{
     height: 70vh;
-    max-width: 75%;
+    max-width: 72%;
     padding:2rem;
 }
 .home .row .home-page-img img:hover{
     transform: scale(1.1);
+}
+.home .about{
+    display: flex;
+    flex-direction: row;
+    max-width: 57%;
+    margin: auto;
+    font-family: var(--para-family);
+    letter-spacing: 0.09rem;
+    
+}
+.home .about:nth-child(2){
+    padding-left: 1rem;
+}
+.home .about img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.home .about .about-name{
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+.home .about .about-data{
+    color: grey;
+    padding-top: 0;
+    padding-left: 1rem;
+
 }
 .website-name {
     max-width: 56%;
@@ -201,7 +226,6 @@ section{
     font-family: var(--heading-family);
     line-height: 2;
     text-decoration: solid;
-
     font-weight: 600;
     letter-spacing: 0.09rem;
 }
@@ -215,10 +239,17 @@ section{
 .fotor-prons p b{
     text-decoration: underline;   
 }
-.last-sentence{
+.last-sentence {
     font-size: 2.1rem;
     max-width:63%;
     margin: auto;
+    font-weight: 600;
+}
+.endblog{
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-family: cursive;
 }
 
 @media (max-width: 1030px) {
@@ -289,28 +320,104 @@ section{
     }   
 }
 @media (max-width:767px) {
-
     .home .row .home-page-heading{
         font-family: serif;
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .home .row .home-page-img img{
         height: 64vh;
         max-width: 80%;
-
     }
-   
     .row .websites {
         height: 8rem;
         width: 8rem;
         margin-right: 1.75rem;
     }
     .websites  img{
-        height: 15rem;
-        width: 100%;
+        height: 10rem;
     }
     .website-name {
         max-width: 72%;
         padding: 0.7rem;
     }
+    .website-name .website-para p{
+        padding: 1.2rem 0;
+        font-size: 1.8rem;
+    }
+    .website-fotor .heading{
+        font-size: 2.5rem;
+        margin-top: 4rem;
+        padding: 3rem 2%;
+    }
+    .fotor{
+        max-width: 95%;
+    }
+    .fotor .fotor-img img{
+        min-height: 20rem;
+        max-width: 25rem;
+    }
+    .fotor .fotor-content .fotor-para{
+        padding-left: 5rem;
+    }
+    .fotor .fotor-content .fotor-para p{
+        font-size: 1.42rem;
+    }
+    .fotor-main-content{
+        max-width: 95%;
+    }
+    .fotor-main-content p{
+        font-size: 1.8rem;
+    } 
+    .fotor-content-images{
+        max-width: 90%;
+        box-shadow: none;
+    }
+    .fotor-content-images .img1,.fotor-content-images .img2{
+        height: 22rem;
+        width: 100%;
+        box-shadow: none;
+        padding-top: 3rem;
+    }
+    .fotor-content-images p{
+        font-size: 1.8rem;
+        padding-top:0rem ;
+    }
+    .fotor-prons{
+        max-width: 95%;
+        padding-top: 2rem;
+    }
+    .fotor-prons h2{
+        font-size: 2rem;
+    }
+    .fotor-prons p{
+        font-size: 1.8rem;
+    }
+    .last-sentence{
+        font-size: 1.8rem;
+        max-width:95%;
+    }
 }
+@media (max-width:575px){
+    .row .websites {
+        height: 8rem;
+        width: 12rem;
+        margin-right: 1.75rem;
+        margin-bottom: 2rem;
+    
+    }
+    .websites  img{
+        height: 6rem;
+    }
+}
+    @media (max-width:330px){
+        .row .websites {
+            height: 8rem;
+            width: 12rem;
+            margin-right: 1.75rem;
+            margin-bottom: 2rem;
+        
+        }
+        .websites  img{
+            height: 6rem;
+        }
+    }
